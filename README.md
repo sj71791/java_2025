@@ -1,5 +1,5 @@
 #### 2025-02-17
-welcom!
+1. welcom!
 2. git (로컬저장소 - 원격저장소)
 3. java(설치, eclipse)
 
@@ -12,3 +12,6 @@ welcom!
 #### 2025-02-19
 1. casting
 2. operator
+
+#### 2025-02-20
+
