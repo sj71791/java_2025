@@ -17,5 +17,11 @@ public class OperatorEx002 {
 		System.out.println("q3: "+ (ch>='0' && ch<='9'));
 		System.out.println("q4: "+ (ch>='A' && ch<='Z' || ch>='a' && ch<='z'));
 		
+		int y=5;
+		char ah='a';
+		System.out.println("q1 : "+(y>3 && y<10));
+		System.out.println("q2 : "+(ah=='a' || ah=='A'));
+		System.out.println("q3 : "+(ah>='0'&&ah<='9'));
+		System.out.println("q4 : "+(ah>='a'&&ah<='z' || ah>='A'&&ah<='Z'));
 	}
 }
