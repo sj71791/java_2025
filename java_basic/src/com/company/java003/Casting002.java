@@ -46,14 +46,12 @@ public class Casting002 {
 		System.out.println(str1.charAt(0)); // a
 		System.out.println(str1.charAt(1)); // b
 		System.out.println(str1.charAt(2)); // c
-	    //char ch = scanner.nextChar();
+	        //char ch = scanner.nextChar();
 		String str = scanner.next();
 		System.out.println("입력한 문자열 : " + str);
 		
 		char ch = scanner.next().charAt(0);
 		System.out.println("입력한 문자 : " + ch);
-		
-		//Q2. 대문자입력받아서 소문자로 변경프로그램 -Casting
 		
 	}
 }
