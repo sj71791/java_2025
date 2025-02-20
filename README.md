@@ -4,10 +4,11 @@ welcom!
 3. java(설치, eclipse)
 
 #### 2025-02-18
-1. OOP 특징
-2. 
+1. data type
+2. print
+3. var 
 
 
 #### 2025-02-19
-1. 
-2. 
+1. casting
+2. operator
