@@ -28,7 +28,7 @@ public class ifEx007_1 {
 		if(a=='+') {System.out.println(""+num1+a+num2+"="+(num1+num2));}
 		if(a=='-') {System.out.println(""+num1+a+num2+"="+(num1-num2));}
 		if(a=='*') {System.out.println(""+num1+a+num2+"="+(num1*num2));}
-		System.out.println(""+num1+a+num2+" = " + String.format("%.2f", (num1/(float)num2)));
+		System.out.println(""+num1+a+num2+" = " + String.format("%.2f이다", (num1/(float)num2)));
 		
 		//3
 		if(a=='+') {result=""+(num1+num2);}
