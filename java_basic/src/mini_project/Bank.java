@@ -57,8 +57,8 @@ public class Bank {
 					inmon=scanner.nextInt();
 					if(money>=inmon) {
 						money-=inmon;
-					} else {System.out.println("다시 확인해주세요");}
-					System.out.println("==출금완료\n잔액 : "+money);
+						System.out.println("==출금완료\n잔액 : "+money);
+					} else {System.out.println("잔액이 부족합니다");}
 				}else {System.out.println("다시 확인해주세요");}
 			}
 			else if(num==5) {
@@ -72,6 +72,7 @@ public class Bank {
 					if(yn=='y') {
 						id="";
 						pw="";
+						System.out.println("처리되었습니다");
 					}
 				}else {System.out.println("다시 확인해주세요");}
 			}
