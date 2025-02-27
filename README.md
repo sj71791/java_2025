@@ -25,7 +25,7 @@
 
 #### 2025-02-21
 1. for문
-2. 미니 프로젝트 - Bank.java (https://youtu.be/eyia6mZJphg)
+2. 미니 프로젝트 - Bank.java (https://youtu.be/xsXXT3_QqPM)
 
 
 
