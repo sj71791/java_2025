@@ -54,8 +54,7 @@
 
 #### 2025-02-21
 1. for문
-2. 미니 프로젝트 - Bank.java (https://youtu.be/xsXXT3_QqPM)
-제어문과 메서드를 활용한 Bank 미니 프로젝트
+2. 미니 프로젝트 - Bank.java (https://youtu.be/xsXXT3_QqPM) 제어문과 메서드를 활용한 Bank 미니 프로젝트
 
 
 ---
