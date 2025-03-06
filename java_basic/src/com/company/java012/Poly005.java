@@ -1,19 +1,11 @@
 package com.company.java012;
 /*
-<<<<<<< HEAD
-		  Object
-		    ↑
-		   Calc (exec)
-	↑	  ↑		↑		↑
-	plus Minus Multi  Divide
-=======
 		   Object
 		     ↑
 		   Calc (exec)
 	 ↑	   ↑	↑		↑
 	plus Minus Multi  Divide
 	(exec)(exec)(exec)(exec)
->>>>>>> 1aca09002bc068ce3c8b6b92998796fcd9ee515d
  */
 class Calc extends Object{void exec(double d1, double d2){System.out.println();}}
 class Plus extends Calc{void exec(double d1, double d2){System.out.println(d1+d2);}}
