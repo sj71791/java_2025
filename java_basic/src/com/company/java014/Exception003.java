@@ -23,21 +23,3 @@ public class Exception003 {
 		System.out.println("결과물 : "+a);
 	}
 }
-/*	1) main안에서
-Exception in thread "main" java.util.InputMismatchException
-	at java.base/java.util.Scanner.throwFor(Scanner.java:964)
-	at java.base/java.util.Scanner.next(Scanner.java:1619)
-	at java.base/java.util.Scanner.nextInt(Scanner.java:2284)
-	at java.base/java.util.Scanner.nextInt(Scanner.java:2238)
-	at com.company.java014.Exception003.nextInt(Exception003.java:10)
-	at com.company.java014.Exception003.main(Exception003.java:15)
-	
-	2) method
-Exception in thread "main" java.util.InputMismatchException
-	at java.base/java.util.Scanner.throwFor(Scanner.java:964)
-	at java.base/java.util.Scanner.next(Scanner.java:1619)
-	at java.base/java.util.Scanner.nextInt(Scanner.java:2284)
-	at java.base/java.util.Scanner.nextInt(Scanner.java:2238)
-	at com.company.java014.Exception003.nextInt(Exception003.java:10)
-	at com.company.java014.Exception003.main(Exception003.java:15)
-*/
