@@ -1,4 +1,8 @@
 package com.company.java016;
+/*
+ 객체호출순서: C1() B1() A1() Object()
+ 객체생성순서: Object A1 B1 C1
+  */
 class A1 extends Object{
 	int a;
 	public A1() { super(); }

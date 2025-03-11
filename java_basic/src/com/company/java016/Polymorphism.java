@@ -14,5 +14,7 @@ public class Polymorphism {
 		Papa mypapa=new Son();
 		System.out.println(mypapa.money); //10000
 		mypapa.sing(); //빅뱅-거짓말
+		
+		System.out.println(((Son)mypapa).money); //1500
 	}
 }

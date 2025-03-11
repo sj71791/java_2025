@@ -13,6 +13,7 @@ public class ClassArr004 {
 		ScoreProcess process=new ScoreProcess();
 		process.process_avg(std);
 		process.process_pass(std);
+		
 		ScorePrint print=new ScorePrint();
 		print.show(std);
 	}

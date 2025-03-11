@@ -1817,10 +1817,12 @@ class Cat extends Animal{
   - 한번만 사용하고 버려지는 객체를 사용할 때
   - 인터페이스 테스트, ui이벤트 처리객체
 
-
+--------------------------------------------------------------------------------------------------------
 part3) oop 활용  .... 챗GPT
-   - collection ( ArrayList ) ,  Thread , lambda + Stream ( method 많이 사용) / io / network
-
+   - collection ( ArrayList ) , lambda + Stream ( method 많이 사용) 
+   - Thread/ io / network
+   - java
+--------------------------------------------------------------------------------------------------------
 ◆1. Collection Framework
 1. 저장단위
 변수 < 배열 < 클래스 < 콜렉션 프레임워크 < 파일 < db
@@ -1842,5 +1844,26 @@ part3) oop 활용  .... 챗GPT
 3) Map : key, value 쌍	  사전
            add(X) put
            , get(key)  향상된 for/lterator, size, romove, contains
+
+◆2. Lambda + Stream
+1. Lambda ?
+- 자바에서 함수적 프로그래밍 지원기법
+- 코드 간결하게
+
+- 함수형 인터페이스
+ : 1개의 추상메서드를 갖는 인터페이스
+
+
+
+
+
+java
+1.web 	      ...spring (backend)
+2.react+node  ...frontend
+3.Django        
+4.flutter        app
+
+
+
 
 
