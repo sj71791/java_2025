@@ -21,10 +21,12 @@ public class Bank2 {
 			System.out.print(menu+"\n입력>>> ");
 			num=scanner.nextInt();
 			int find=1;
-			int urin=0;
+			int urin=-1;
 			int urnum=0;
 			if(num==1) {
 				print("추가");
+				for(int i=0; i<id.length; i++) {if(id[i]==null) {urin=i; break;}}
+				
 				System.out.print("아이디 입력 : ");
 				id[urin]=scanner.next();
 				System.out.print("비밀번호 입력 : ");
@@ -33,17 +35,16 @@ public class Bank2 {
 				age[urin]=scanner.nextInt();
 				System.out.print("잔액 입력 : ");
 				money[urin]=scanner.nextInt();
-				urin++;
+				
 			} else if(num==2 || num==3 || num==4 || num==5) {
 				System.out.print("id : ");
 				String inid=scanner.next();
 				System.out.print("password : ");
 				String inpw=scanner.next();
 				for(int i=0; i<id.length; i++) {
-					if(inid.equals(id[i])&&inpw.equals(pw[i])) {
-						find=0; urnum=i; break;
-					} else {System.out.println("다시 확인해주세요");break;}
+					if(inid.equals(id[i])&&inpw.equals(pw[i])) { find=0; urnum=i; break; }
 				}
+				if(find!=0) {System.out.println("다시 확인해주세요");}
 			} else if(num==9) {print("종료"); break;}
 			
 			if(find==0) {
@@ -72,8 +73,10 @@ public class Bank2 {
 					System.out.print("계좌를 삭제하시겠습니까? (Y/N) ");
 					yn=scanner.next().charAt(0);
 					if(yn=='y') {
-						id[urnum]="";
-						pw[urnum]="";
+						id[urnum]=null;
+						pw[urnum]=null;
+						money[urnum]=0;
+						age[urnum]=0;
 						System.out.println("삭제 처리되었습니다");
 					}
 				}
