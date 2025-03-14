@@ -12,6 +12,7 @@
 1. Lambda(2)
 2. Stream
 3. JAVA IO
+4. 미니 프로젝트 - Bank2.java Array와 향상된 for문
 ---
 
 #### 2025-03-11
