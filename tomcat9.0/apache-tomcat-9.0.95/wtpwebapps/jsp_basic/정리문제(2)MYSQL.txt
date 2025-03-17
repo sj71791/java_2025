@@ -1,0 +1,47 @@
+Q1. rdb?
+relational database
+관계형 데이터베이스 - 테이블들이 관계(외래키)
+
+Q2. mysql에 접속하는 코드는?  아이디 root / 비번 1234
+mysql -uroot -p
+1234
+
+Q3. database 만들기 db명 : db1
+create database db1;
+show databases;
+
+Q4. db1 사용
+use db1;
+
+Q5. db1 안에 테이블만들기 : userinfos
+create table userinfos(
+no int not null auto_increment primary key,
+name varchar(100) not null,
+age int
+);
+desc userinfos;
+
+Q6. userinfos 테이블에 age int 필수입력으로 변경
+alter table userinfos modify age int not null;
+
+Q7. name varchar(50) 필수입력으로 변경
+alter table userinfos modify name varchar(50) not null;
+
+Q8. email varchar(50) 추가
+alter table userinfos add email varchar(50);
+
+Q9. email 삭제
+alter table userinfos drop email; 
+
+Q10. 테이블명 userinfo로 수정
+alter table userinfos rename userinfo;
+
+
+
+
+
+
+
+
+
+
