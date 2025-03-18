@@ -40,3 +40,32 @@ Q4. userinfo 데이터 출력
 select * from userinfo;  
 
 create table userinfo2 select * from userinfo;
+
+
+[JSP]
+
+Q1. 
+<form action="jsp007_result.jsp" method="get">
+	  <div class="mb-3 mt-3">
+	   	 <label for="query" class="form-label">검색어</label>
+	    <input type="text" class="form-control" id="query" 
+	    	placeholder="구글에게 물어봐!" name="para">
+	  </div>
+	  <button type="submit" class="btn btn-primary btn-danger">Submit</button>
+</form>
+
+<div class="container card my-5">
+	<h3 class="card-header">MY 검색어</h3>
+	<%
+		String search = request.getParameter("para");  #####칸채우기
+	%>
+	<p>검색어 : <%=search %></p>
+	<p><a href="javascript:history.go(-1)" class="btn btn-danger">BACK</a></p>
+</div>
+
+Q2.
+1) 드라이버로드 (   Class.forName("com.mysql.cj.jdbc.Driver");   )
+2)  DB연동 (   Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mbasic","root","1234")   )
+
+
+
