@@ -2,22 +2,24 @@
 
 #### 2025-03-20
 1. MySQL Installer 8.0.41 노트북 설치, 세팅함
-2. 
+2. mysql (select - order by, limit, 집계함수)
+3. milk 
 ---
 
 #### 2025-03-19
 1. dynamic web project에 jdbc연동하고 데이터 출력
-2. mysql 
+2. mysql (select from where)
 ---
 
 #### 2025-03-18 :pencil2:
-1. mysql crud
-2. 
+1. mysql crud(select)
+2. jsp(form, 쿼리스트링, jdbc연동)
 ---
 
 #### 2025-03-17
-1. mysql
-2. jsp 
+1. mysql crud + insert,select
+2. jsp (정적페이지ws, 동적페이지was, 템플릿 만들기)
+3. dynamic web project에 jdbc연동
 ---
 
 #### 2025-03-14
