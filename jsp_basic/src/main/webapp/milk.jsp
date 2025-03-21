@@ -10,6 +10,9 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+tr,td{text-align:center;}
+</style>
 </head>
 <body>
 <!--  -->
@@ -22,7 +25,7 @@
 <!-- 메뉴판 -->
 <!-- 메뉴판 -->
 	<div class="container card  my-5">
-		<h3 class="card-header   bg-danger  text-white"> Milk Menu </h3>
+		<h3 class="card-header   bg-danger  text-white"> MILK Menu </h3>
 		
 		  <table class="table table-bordered  table-striped  table-hover table-dark my-5">
 		    <caption>우유메뉴</caption>
@@ -74,7 +77,6 @@
 		    </tbody>
 		  </table>		 
 	</div>
-
 
 	<!-- 주문현황 -표 -->
 	<!-- 주문현황 -표 -->
@@ -150,6 +152,9 @@
 				</form>
 		        <!--  -->
 		        <!--  -->
+		       	<script>
+		       	
+		       	</script>
 		      </div>
 		    </div>
 		  </div>
@@ -167,7 +172,7 @@
 		      <div class="card-body">
 		        <!--  -->
 		        <!-- action="처리" method="방식" -->
-		        <form action="milk_update.jsp" method="post">
+		        <form action="milk_update.jsp" method="post" onsubmit="return form()">
 		          <div class="mb-3 mt-3">
 				    <label for="ono_update" class="form-label">수정 주문번호</label>
 				    <input type="number" class="form-control" id=ono_update" 
@@ -185,6 +190,9 @@
 				  </div>
 				  <button type="submit" class="btn btn-danger">주문 수정하기</button>
 				</form>
+				<script>
+				
+				</script>
 		        <!--  -->
 		        <!--  -->
 		      </div>
@@ -213,6 +221,9 @@
 				  </div>
 				  <button type="submit" class="btn btn-danger">주문삭제</button>
 				</form>
+				<script>
+				
+				</script>
 		        <!--  -->
 		        <!--  -->
 		      </div>
