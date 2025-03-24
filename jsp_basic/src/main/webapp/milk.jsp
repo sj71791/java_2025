@@ -137,7 +137,7 @@ tr,td{text-align:center;}
 		        	 method="방식"	데이터 노출안됨 (post)
 		        	 name			oname, onum
 		        -->
-		        <form action="milk_insert.jsp" method="post">
+		        <form action="milk_insert.jsp" method="post" onsubmit="return form1()">
 				  <div class="mb-3 mt-3">
 				    <label for="email" class="form-label">주문할 우유이름</label>
 				    <input type="text" class="form-control" id="email" 
@@ -153,7 +153,13 @@ tr,td{text-align:center;}
 		        <!--  -->
 		        <!--  -->
 		       	<script>
-		       	
+		       		function form1(){
+		       			let oname=document.querySelector("#email");
+		       			let onum=document.querySelector("#pwd");
+		       			
+		       			if(oname.value==""){alert("빈칸을 입력해주세요."); oname.focus(); return false;}
+		       			if(onum.value==""){alert("빈칸을 채워주세요."); onum.focus(); return false;}
+		       		}
 		       	</script>
 		      </div>
 		    </div>
@@ -172,10 +178,10 @@ tr,td{text-align:center;}
 		      <div class="card-body">
 		        <!--  -->
 		        <!-- action="처리" method="방식" -->
-		        <form action="milk_update.jsp" method="post" onsubmit="return form()">
+		        <form action="milk_update.jsp" method="post" onsubmit="return form2()">
 		          <div class="mb-3 mt-3">
 				    <label for="ono_update" class="form-label">수정 주문번호</label>
-				    <input type="number" class="form-control" id=ono_update" 
+				    <input type="number" class="form-control" id="ono_update" 
 				    placeholder="수정할 주문번호 적어주세요!" name="ono">
 				  </div>
 				  <div class="mb-3 mt-3">
@@ -191,7 +197,15 @@ tr,td{text-align:center;}
 				  <button type="submit" class="btn btn-danger">주문 수정하기</button>
 				</form>
 				<script>
-				
+					function form2(){
+						let ono_update=document.querySelector("#ono_update");
+						let oname_update=document.querySelector("#oname_update");
+						let onum_update=document.querySelector("#onum_update");
+						
+						if(ono_update.value==""){alert("빈칸을 입력해주세요."); ono_update.focus(); return false;}
+						if(oname_update.value==""){alert("빈칸을 입력해주세요."); oname_update.focus(); return false;}
+						if(onum_update.value==""){alert("빈칸을 입력해주세요."); onum_update.focus(); return false;}
+					}
 				</script>
 		        <!--  -->
 		        <!--  -->
@@ -212,7 +226,7 @@ tr,td{text-align:center;}
 		      <div class="card-body">
 		        <!--  -->
 		        <!-- action="처리" method="방식" -->
-		        <form action="milk_delete.jsp" method="get">
+		        <form action="milk_delete.jsp" method="get" onsubmit="return form3()">
 				
 				  <div class="mb-3">
 				    <label for="ono_delete" class="form-label">취소 주문번호</label>
@@ -222,7 +236,10 @@ tr,td{text-align:center;}
 				  <button type="submit" class="btn btn-danger">주문삭제</button>
 				</form>
 				<script>
-				
+					function form3(){
+						let ono_delete=document.querySelector("#ono_delete");
+						if(ono_delete.value==""){alert("빈칸을 채워주세요."); ono_delete.focus(); return false;}
+					}
 				</script>
 		        <!--  -->
 		        <!--  -->
@@ -231,9 +248,6 @@ tr,td{text-align:center;}
 		  </div>
 		
 		</div>	
-	
-	 
-		
 	</div>
 </body>
 </html> 
