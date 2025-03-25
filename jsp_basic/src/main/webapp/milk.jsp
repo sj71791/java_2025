@@ -18,7 +18,7 @@ tr,td{text-align:center;}
 <!--  -->
 <!--  -->
 <div class="p-5 bg-danger text-white">
-  <h1>MILK ORDER Project</h1>
+  <h1>MILK ORDER PROJECT</h1>
   <p>PreparedStatement Ex</p>
 </div><!--  bg-primary(파랑)  danger(빨강)  warning(노랑) dark(블랙) info(하늘색) secondary(회색)  -->
 
