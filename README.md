@@ -1,8 +1,9 @@
 ---
 
 #### 2025-03-26
-1. DBCP연동
-2. apache.org - [commons] - dbcp, pool, collections 다운
+1. DBCP
+2. servlet
+3. apache.org - [commons] - dbcp, pool, collections 다운
 ---
 
 #### 2025-03-25
