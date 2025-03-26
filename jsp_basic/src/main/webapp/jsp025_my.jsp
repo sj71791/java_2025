@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ include file="jsp022_header.jsp" %>
+<%@ include file="jsp025_header.jsp" %>
 <!-- nav -->
 <!-- nav -->
 	<div class="container card my-5 bg-success">
@@ -13,4 +13,4 @@
 		</table>
 	</div>
 
-<%@ include file="jsp022_footer.jsp"%>
+<%@ include file="jsp025_footer.jsp"%>

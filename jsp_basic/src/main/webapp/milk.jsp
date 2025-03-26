@@ -41,6 +41,7 @@ tr,td{text-align:center;}
 		
 		<%@page import="java.sql.*"%>
 		<%
+		
 		// select * from milk; - PreparedStatement  
 		Connection conn = null;  PreparedStatement pstmt = null;  ResultSet rset = null;
 		try{
