@@ -1,8 +1,8 @@
 ---
 
 #### 2025-03-26
-1. mysql ()
-2. jsp ()
+1. DBCP연동
+2. apache.org - [commons] - dbcp, pool, collections 다운
 ---
 
 #### 2025-03-25
