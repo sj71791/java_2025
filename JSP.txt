@@ -145,7 +145,57 @@ DataSource ds = (DataSource)envContext.lookup("jdbc/mbasic");
 Connection conn = ds.getConnection();
 
 
+■ PART002
+#1. frontcontroller board 게시판 완성
+#2. 개발사이트 api + ajax
+#3. [숙제] - api 2개이상 / upgrade 기능업그레이드
 
+1) dynamic web project - JOAbooks
+2) inc - header/footer
+3) error page 설정 - 404, 500
+4) dbcp 연동
+
+Project (2) Model
+DB: table명 - board
+글번호	bno	 int		not null 	auto_increment   primary key
+글제목	btitle	 varchar(1000)	not null
+글내용	bcontent	 text		not null
+글쓴이	bname	 varchar(100)	not null
+조회수	bit	 int				default 0
+글쓴날짜	bdate	 timestamp	not null	default current_timestamp
+아이피	bip	 varchar(100)	not null
+
+
+--글비밀번호 bpass
+Dto 	   : [com.company.domain] - BoardVO	 privae
+DBManager : [com.company.dbmanager] - DBManager
+Dao :  [com.company.dao]    - BoardDao
+
+........................................................................................................................
+executeQuery - select (표)
+executeUpdate - insert, update, delete (실행줄수)
+참고2)
+리턴값  메서드명( ) {}
+
+ 1. 글쓰기	          - insert into board( btitle, bcontent, bname, bip ) values ( ?,?,?,? );
+    public int insert( BoardVO vo ){ return (); }
+
+ 2. 최신글읽기      - select * from board order by bno desc
+    public ArrayList<BoardVO> selectAll(  ){ return null; }
+
+ 3. 해당글읽기 /  해당글수정폼      - select * from board where bno=?
+   public BoardVO select(int bno){ return null;  }
+
+ 4. 조회수증가      - update board set bhit=bhit+1 where bno=?
+   public int updateHit( int bno ) { return 0; }
+
+ 5. 해당글수정기능 - update board set btitle=?, bcontent=? where bno=?
+   public int update( BoardVO vo ){ return 0; }
+
+ 6. 해당글삭제      - delete from board where bno=?
+   public int delete( int bno ){ return 0; }
+
+Test
 
 
 
