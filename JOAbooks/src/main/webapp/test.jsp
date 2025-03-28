@@ -36,8 +36,9 @@
 	//6. 
 	//System.out.println(dao.delete(3));
 	
-	//5. update
-	/* vo.setBtitle("제목-new");
+	//5. update 기능
+	/* 
+	vo.setBtitle("제목-new");
 	vo.setBcontent("내용-new");
 	vo.setBno(2);
 	System.out.println(dao.update(vo));  */

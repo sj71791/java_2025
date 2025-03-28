@@ -167,7 +167,7 @@ DB: table명 - board
 
 
 --글비밀번호 bpass
-Dto 	   : [com.company.domain] - BoardVO	 privae
+Dto 	   : [com.company.domain] - BoardVO	 private
 DBManager : [com.company.dbmanager] - DBManager
 Dao :  [com.company.dao]    - BoardDao
 
@@ -178,7 +178,7 @@ executeUpdate - insert, update, delete (실행줄수)
 리턴값  메서드명( ) {}
 
  1. 글쓰기	          - insert into board( btitle, bcontent, bname, bip ) values ( ?,?,?,? );
-    public int insert( BoardVO vo ){ return (); }
+    public int insert( BoardVO vo ){ return 0; }
 
  2. 최신글읽기      - select * from board order by bno desc
     public ArrayList<BoardVO> selectAll(  ){ return null; }
@@ -195,9 +195,57 @@ executeUpdate - insert, update, delete (실행줄수)
  6. 해당글삭제      - delete from board where bno=?
    public int delete( int bno ){ return 0; }
 
-Test
+[com.company.controller] - [FrontController]   *.do
+
+[클라이언트 요청]   
+↓
+index.jsp  ->  *.do   [FrontController]
+       ㄴ  /list.do           - C:전체리스트        BList        /      V:list.jsp 
+       ㄴ  /write_view.do - C:X                                          V:write.jsp 
+       ㄴ  /write.do        - C:글삽입             BWrite(알림창- 성공/실패) /   V: /list.do
+       ㄴ  /detail.do      - C:해당번호 상세보기  BDetail(조회수올리기/해당글상세)
+                                      V:detail.jsp
+       ㄴ  /edit_view.do  - C:해당번호 글수정폼  BEditView(해당글상세)
+                                      V:edit.jsp
+       ㄴ  /edit.do       - C:해당번호 글수정기능 BEdit(해당글수정)
+                                      V: /detail.do 
+       ㄴ  /delete.do     - C:해당번호 글삭제기능 BDelete(해당글삭제)      V: /list.do
+
+■ PART005 필요기능
+1. el/jstl
+> el
+   - 표현식( 출력 )
+   - before : <%= %>
+   - after : ${ }
+> jstl ( JavaServer page Standard Tag Library )
+  - 자바코드 대신 태그로 웹페이지작성
+  - before : <%= if() %>
+  - after : <c:if test=></c:if> / <c:forEach items="" var=""><c/:forEach>
+
+-1.  반복문, 조건문 등의 기본구현
+-2.  사용법
+ 1. http://jakarta.apache.org/
+ 2. 왼쪽메뉴 :  Tablibs
+ 3. Standard Taglib -  다운로드 - jakarta-taglibs-standard-1.1.1.zip
+ 4. [WEB-INF]-[lib] - jstl.jar / standard.jar
+
+-3. jstl 라이브러리
+  core : 기본적인 기능제공
+  fmt  : format 형식
+  xml  : xml관련처리
+  sql  : sql관련처리
 
 
+
+
+
+2. admin만 글쓰기 (session 정리)
+
+3. Naver api
+[com.company.util] - Naverbook.java
+
+4. ajax
+http://localhost:8080/JOAbooks/list.jsp
 
 
 

@@ -2,19 +2,21 @@
     pageEncoding="UTF-8"%>
 <%@ include file="../inc/header.jsp" %>
 	<div class="container card my-5">
+	<%-- <%=request.getAttribute("dto") %> --%>
 		<h3 class="card-header">MULTIBOARD - 글쓰기</h3>
-		<form action=".java" method="post" onsubmit="return form()">
+		<form action="edit.do?bno=${dto.bno}" method="post" onsubmit="return form()">
 		<div class="my-5">
 			<label for="bname" class="form-label">이름</label>
-			<input type="text" id="bname" name="bname" class="form-control">
+			<input type="text" id="bname" name="bname" readonly value="${dto.bname}" class="form-control">
 		</div>
 		<div class="my-5">
 			<label for="btitle" class="form-label">제목</label>
-			<input type="text" id="btitle" name="btitle" class="form-control">
+			<input type="text" id="btitle" name="btitle" class="form-control" value="${dto.btitle}">
 		</div>
 		<div class="my-5">
 			<label for="bcontent" class="form-label">내용</label>
-			<textarea cols="60" rows="10" id="bcontent" name="bcontent" class="form-control">
+			<textarea cols="60" rows="10" id="bcontent" name="bcontent" class="form-control" >
+			${dto.bcontent}
 			</textarea>
 		</div>
 		<div class="d-grid gap-2">
@@ -22,8 +24,8 @@
 		  
 		</div>
 		</form>
-		<input type="submit" value="취소" class="btn btn-block btn-outline-primary">
-		<button type="list.jsp" class="btn btn-block btn-outline-primary my-3">목록보기</button>
+		<input type="reset" value="취소" class="btn btn-block btn-outline-primary">
+		<button type="" href="list.do" class="btn btn-block btn-outline-primary my-3">목록보기</button>
 	</div>
 	<script>
 	function form(){
