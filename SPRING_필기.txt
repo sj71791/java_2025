@@ -1,0 +1,184 @@
+1. SPRING?
+
+--------------------------------
+#1. SPRING?
+--------------------------------
+▶ Step0. jsp
+1. mvc1 -  jsp( controller )역할
+2. mvc2 - servlet( controller )역할
+3. frontcontroller
+
+▶ Step1.  framework
+1. framework  [  디자인패턴 + 라이브러리 = 프레임워크 ]
+2. 소프트웨어 개발의 뼈대역할
+
+▶ Step2.  ioc + di
+1. ioc
+ - inversion of control
+ - 제어의 역전
+ - 인스턴스의 생성~소멸까지 생명주기를 개발자가 아니라 컨테이너가 하는 것
+ - pojo ( plain old java object)
+
+  class A{}
+  A a1 = new A()
+
+  생성 → 초기화 → 서비스  → 소멸
+    ↑                                      ↓
+     ----------------------------------
+ 
+   ioc가 아닌경우   - [ 개발자★  → ( Class A)  
+			   → ( Class B)
+			     → ( Class C)     ] 컨테이너
+
+   ioc인      경우   - [ 개발자  ← ( Class A)  
+			 ← ( Class B)
+			     ← ( Class C)★     ] 컨테이너
+
+
+▶ Step3.  실습
+===================
+실습(1) 설치
+===================
+* 버젼다운그레이드
+  0. java.sun.com   -  java11   / build path
+	JAVA_HOME	C:\Program Files\Java\jdk-11
+	path                      %JAVA_HOME%\bin             - 맨위로
+              
+  1. 스프링 3버젼 다운로드
+  2. 다운로드 경로
+      https://github.com/spring-attic/toolsuite-distribution/wiki/Spring-Tool-Suite-3
+  3. 압축 - 경로짧게 / 공백, 한글,특수기호(-) 경로에있으면 빼기 
+ 
+
+
+===================
+실습(2) spring setting
+===================
+    1. dynamic web project - spring000
+    2. configure  - [Convert to Maven Project]
+    3. spring      - add Spring project Nature
+    4. properties - java se-11 / project facts, build path
+    5. build path - add Libraries - JUnit 4
+
+    구조확인
+	1. pom.xml         설치 다운로드
+              2. src/main/java   실제 자바파일들 위치
+              3. src/test/java    실제 테스트파일위치
+              4. src/main/webapp   jsp 파일들위치
+
+   연습문제)  spring001_di  프로젝트만들기
+
+
+spring mvc
+1. 검색 : spring
+2. legacy project
+3. mvc project
+
+\.metadata\.plugins\
+org.springsource.ide.eclipse.commons.content.core
+
+1. 자동화
+2. di (dependency injection : 의존성주입)
+- 각 클래스간의 의존관계를 [설정파일]을 통해 [컨테이너]가 자동으로 연결
+  장점 : 코드단순화 / 결합도 제거
+
+※ 플러그인
+
+※ import해서 완성된 파일 가져오기
+
+
+======================
+실습(4) SPRING 정리
+======================
+1. 프레임워크
+  - 소프트웨어개발의 뼈대역할 [디자인패턴 + 라이브러리]
+2. IOC
+  - 인스턴스 생성~소멸까지 생명주기를 스프링이 관리
+3. DI
+  - 각클래스의 의존관계를 [설정파일]을 통해서 컨테이너가 자동연결
+4. BEAN
+  - 스프링이 관리하는 객체
+  - beanFactory  ← ApplicationContext
+
+
+
+======================
+실습(4) spring di 연습
+======================
+1. dynamic web project - spring002_di_ex
+2. configure  - [Convert to Maven Project]
+3. spring      - add Spring project Nature
+4. properties - java se-11 / project facts, build path
+5. build path - add Libraries - JUnit 4
+
+pom.xml 셋팅- <dependencies>
+Maven - Update Project
+
+>> di? 각클래스의 의존관계를 [설정파일]을 통해서 컨테이너(spring)가 자동연결
+
+------------------------------
+#3. Bean
+------------------------------
+▶1. Bean?
+1. bean spring 이 관리하는 객체
+2. xml vs Annotation
+ 2-1. xml [운영]
+ - 모든 bean을 명시적으로 xml에 등록
+ - 여러개발자가 같은 설정파일을 공유해서 개발하면 수정시 충돌이 일어날 경우가 많음.
+
+ 2-2. Annotation (Bean Scanning) [개발]
+ - Bean  @를 붙여서 자동인식
+ - 개발속도 향상
+ - Bean 간의 의존관계를 파악하기 힘듦
+
+▶2. @Component
+1. @Component  일반적인 컴포넌트
+2. @Component 구체화된 형식  @Controller(웹요청받아서 응답), 
+			 @Service(비지니스로직), @Repository(db연동)
+
+<context:component-scan  base-package="경로" />
+
+
+
+
+
+
+
+
+
+
+
+
+<dependencies>
+<!--  https://mvnrepository.com/artifact/junit/junit  -->
+<dependency>
+<groupId>junit</groupId>
+<artifactId>junit</artifactId>
+<version>4.12</version>
+<scope>test</scope>
+</dependency>
+<!--  https://mvnrepository.com/artifact/org.springframework/spring-context  -->
+<dependency>
+<groupId>org.springframework</groupId>
+<artifactId>spring-context</artifactId>
+<version>4.3.27.RELEASE</version>
+</dependency>
+<!--  https://mvnrepository.com/artifact/org.springframework/spring-test  -->
+<dependency>
+<groupId>org.springframework</groupId>
+<artifactId>spring-test</artifactId>
+<version>4.3.27.RELEASE</version>
+<scope>test</scope>
+</dependency>
+</dependencies>
+
+   
+
+
+
+
+
+
+
+
+
