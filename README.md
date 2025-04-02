@@ -1,7 +1,14 @@
+#### 2025-04-02
+1. spring
+---
+
+#### 2025-04-01
+1. spring (mybatis)
 ---
 
 #### 2025-03-31
-1. spring
+1. spring세팅 (jdk11, Spring Tool Suite 3.9.18 다운 )
+2. spring (di, bean, pom.xml)
 
 
 ---
