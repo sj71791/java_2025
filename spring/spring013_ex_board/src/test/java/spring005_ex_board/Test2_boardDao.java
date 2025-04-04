@@ -22,18 +22,24 @@ public class Test2_boardDao {
 	@Autowired DataSource dataSource;
 	@Autowired BoardDao dao;
 	@Test public void test() throws UnknownHostException {
-		/*
-		 * //5. delete BoardDto dto = new BoardDto(); dto.setBpass("1111");
-		 * dto.setBno(1); System.out.println(dao.delete(dto)); //4. update // BoardDto
-		 * dto = new BoardDto(); dto.setBtitle("title-new");
-		 * dto.setBcontent("content-new"); dto.setBpass("1111"); dto.setBno(1);
-		 * System.out.println(dao.update(dto)); //3. select
-		 * //System.out.println(dao.updateHit(1)); System.out.println(dao.select(1));
-		 * //2. insert // BoardDto dto = new BoardDto(); dto.setBname("first");
-		 * dto.setBtitle("title"); dto.setBpass("1111"); dto.setBcontent("content");
-		 * dto.setBip(InetAddress.getLocalHost().getHostAddress());
-		 * System.out.println(dao.insert(dto));
-		 */
+//		//5. delete
+//		BoardDto dto = new BoardDto(); 
+//		dto.setBpass("1111");       dto.setBno(1); 
+//		System.out.println(dao.delete(dto));
+//		//4. update
+////		BoardDto dto = new BoardDto();
+//		dto.setBtitle("title-new"); dto.setBcontent("content-new");
+//		dto.setBpass("1111");       dto.setBno(1); 
+//		System.out.println(dao.update(dto));
+//		//3. select
+//		//System.out.println(dao.updateHit(1));
+//		System.out.println(dao.select(1));
+//		//2. insert
+////		BoardDto dto = new BoardDto();
+//		dto.setBname("first");   dto.setBtitle("title");  dto.setBpass("1111");
+//		dto.setBcontent("content");  
+//		dto.setBip(InetAddress.getLocalHost().getHostAddress());  
+//		System.out.println(dao.insert(dto));
 		//1. selectAll
 		System.out.println(dao.selectAll());
 	}

@@ -15,7 +15,7 @@ import com.company.dto.UserDto;
 public class Test2_userDao {
 	@Autowired  UserDao dao;
 
-	@Ignore/* @Test */  public void selectAll() { System.out.println(dao.selectAll()); }
+	@Test public void selectAll() { System.out.println(dao.selectAll()); }
 	
 	@Ignore/* @Test */  public void insert() { 
 		UserDto dto = new UserDto();
@@ -28,12 +28,12 @@ public class Test2_userDao {
 
 	@Ignore/* @Test */  public void update() { 
 		UserDto dto = new UserDto();
-		dto.setName("five");   dto.setAge(5); dto.setNo(5);   //ï¿½Ö´Â¹ï¿½È£ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ñ°ï¿½ È®ï¿½ï¿½!
+		dto.setName("five");   dto.setAge(5); dto.setNo(5);   //ÀÖ´Â¹øÈ£·Î ¼öÁ¤ÇÑ°Å È®ÀÎ!
 		System.out.println(dao.update(dto)); //1
 		System.out.println(dao.selectOne(5));// UserDto [no=5, name=five, age=5]  
 	}
-	@Test               public void delete() {  
-		System.out.println(dao.delete(4));  //1
+	@Ignore/* @Test */  public void delete() {  
+		System.out.println(dao.delete(5));  //1
 	}  
 }
 

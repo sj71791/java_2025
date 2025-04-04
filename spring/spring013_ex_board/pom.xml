@@ -2,8 +2,8 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>spring007_ex_board</groupId>
-	<artifactId>spring007_ex_board</artifactId>
+	<groupId>spring011_ex_board</groupId>
+	<artifactId>spring011_ex_board</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
@@ -58,8 +58,8 @@
 			<artifactId>mybatis-spring</artifactId>
 			<version>2.0.6</version>
 		</dependency>
-		
-		
+
+		<!-- webmvc -->
 		<!-- webmvc -->
 		<!-- webmvc -->
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
@@ -68,15 +68,61 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>3.2.17.RELEASE</version>
 		</dependency>
-		<!-- webmvc -->
-		<!-- webmvc -->
-		
+
+		<!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
 		<!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
+
+		<!-- lombok -->
+		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.18</version>
+			<scope>provided</scope>
+		</dependency>
+		<!-- lombok -->
+
+		<!-- https://mvnrepository.com/artifact/org.aspectj/aspectjrt -->
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjrt</artifactId>
+			<version>1.7.3</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+			<version>1.7.3</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-aop -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aop</artifactId>
+			<version>4.3.28.RELEASE</version>
+		</dependency>
+		<!-- HikariCP -->
+		<!-- HikariCP -->
+		<!-- https://mvnrepository.com/artifact/com.zaxxer/HikariCP -->
+		<dependency>
+			<groupId>com.zaxxer</groupId>
+			<artifactId>HikariCP</artifactId>
+			<version>2.7.4</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.bgee.log4jdbc-log4j2/log4jdbc-log4j2-jdbc4 -->
+		<dependency>
+			<groupId>org.bgee.log4jdbc-log4j2</groupId>
+			<artifactId>log4jdbc-log4j2-jdbc4</artifactId>
+			<version>1.16</version>
+		</dependency>
+		<!-- HikariCP -->
+		<!-- HikariCP -->
+		<!-- HikariCP -->
 
 	</dependencies>
 	<!-- 수정 -->

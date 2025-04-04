@@ -28,12 +28,12 @@ public class Test2_userDao {
 
 	@Ignore/* @Test */  public void update() { 
 		UserDto dto = new UserDto();
-		dto.setName("five");   dto.setAge(5); dto.setNo(5);   //ÀÖ´Â¹øÈ£·Î ¼öÁ¤ÇÑ°Å È®ÀÎ!
+		dto.setName("five");   dto.setAge(5); dto.setNo(5);   //ï¿½Ö´Â¹ï¿½È£ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ñ°ï¿½ È®ï¿½ï¿½!
 		System.out.println(dao.update(dto)); //1
 		System.out.println(dao.selectOne(5));// UserDto [no=5, name=five, age=5]  
 	}
 	@Test               public void delete() {  
-		System.out.println(dao.delete(5));  //1
+		System.out.println(dao.delete(4));  //1
 	}  
 }
 
