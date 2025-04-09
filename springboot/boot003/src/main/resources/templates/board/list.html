@@ -8,6 +8,7 @@
 </head>
 <body>
 	<div layout:fragment="content">
+		
 		<div class="container   my-5">
 			<h3>MULTIBOARD</h3>
 			<table
@@ -27,17 +28,17 @@
 					<!-- th:text="동적으로꺼내온데이터" -->
 					<!-- th:href="@{/board/insert}" -->
 					<tr th:each=" dto, state : ${list}">
-						<td th:text="${state.index}"></td>
+						<td th:text="${list.size() - state.index}"></td>
 						<td><a th:href="@{|/board/detail/${dto.id}|}" th:text="${dto.btitle}"></a></td>
 						<td th:text="${dto.member.name}"></td>
-						<td th:text="${dto.create_date}"></td>
+						<td th:text="${#temporals.format(dto.create_date,'yyyy-MM-dd HH:mm')}"></td>
 						<td th:text="${dto.bhit}"></td>
 					</tr>
 
 				</tbody>
 			</table>
 			<p class="text-end">
-				<a href="@{/board/insert}" class="btn btn-primary">글쓰기</a>
+				<a th:href="@{/board/insert}" class="btn btn-primary">글쓰기</a>
 			</p>
 		</div>
 
