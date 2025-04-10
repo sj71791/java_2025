@@ -1,15 +1,14 @@
-package com.thejoa.boot004;
+package com.thejoa.boot003;
 
 import java.util.List;
-import java.util.Optional;
 
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import com.thejoa.boot004.member.Member;
-import com.thejoa.boot004.member.MemberRepository;
+import com.thejoa.boot005.member.Member;
+import com.thejoa.boot005.member.MemberRepository;
 
 @SpringBootTest
 class Test1_MemberRepository {
@@ -46,7 +45,7 @@ class Test1_MemberRepository {
 	@Disabled @Test void updatePassword() {
 		memberRepository.updateByIdandPass("1234", "0000", 1L); //0000 → 1234
 	}
-	@Test void delete() {
+	@Disabled @Test void delete() {
 		Member member = memberRepository.findById(1L).get();
 		memberRepository.delete(member);
 	}

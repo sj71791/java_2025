@@ -9,7 +9,8 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.thejoa.boot003.member.Member;
+import com.thejoa.boot004.member.Member;
+
 
 @Service
 public class BoardService{

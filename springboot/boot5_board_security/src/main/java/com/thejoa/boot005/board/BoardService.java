@@ -1,4 +1,4 @@
-package com.thejoa.boot003.board;
+package com.thejoa.boot005.board;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
@@ -9,11 +9,13 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.thejoa.boot003.member.Member;
+import com.thejoa.boot005.member.Member;
+import com.thejoa.boot005.member.MemberRepository;
 
 @Service
 public class BoardService{
 	@Autowired BoardRepository boardRepository;
+	@Autowired MemberRepository memberRepository;
 
 	public List<Board> findALl() { //전체리스트뽑고
 		return boardRepository.findAllByOrderByDesc();
@@ -27,9 +29,10 @@ public class BoardService{
 		return board;
 	}
 
-	public void insert(Board board, Long member_id) {
-		Member member = new Member(); member.setId(member_id);
-		board.setMember(member);
+	public void insert(Board board) {
+		board.setMember(
+				memberRepository.findByUsername(board.getMember().getUsername()).get()
+		);
 		
 		try { board.setBip(InetAddress.getLocalHost().getHostAddress()); }
 		catch (UnknownHostException e) { e.printStackTrace(); }
