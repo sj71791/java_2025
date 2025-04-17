@@ -53,7 +53,6 @@ public class BoardService{
 		);
 	}
 
-
 	public int delete(Board board) {
 		//boardRepository.delete(board);	기본: delete from board where id=?
 		return boardRepository.deleteByIdAndBpass(board.getId(), board.getBpass());
