@@ -1,3 +1,24 @@
+
+#### 2025-04-22
+1. 포트폴리오 팀작업
+2. springboot (fileupload)
+---
+
+#### 2025-04-21
+1. 포트폴리오 팀작업
+2. springboot (생활형ai + ajax - naverbook)
+---
+
+#### 2025-04-18
+1. 포트폴리오 팀작업
+2. springboot (카카오 api 로그인)
+---
+
+#### 2025-04-17
+1. 포트폴리오 팀작업
+2. springboot (네이버 api 로그인)
+---
+
 #### 2025-04-16
 1. 포트폴리오 팀작업
 2. springboot (fileupload)
@@ -5,7 +26,7 @@
 
 #### 2025-04-15
 1. 포트폴리오 팀작업
-2. springboot (paging)
+2. springboot (board paging)
 ---
 
 #### 2025-04-14
@@ -21,20 +42,21 @@
 ---
 
 #### 2025-04-10
-1. 
+1. Security Service
+2. 포트폴리오 주제선정 및 아이디어 회의
 ---
 
 #### 2025-04-09
-1. 
+1. springboot(board - insert, update, select, delete )
 ---
 
 #### 2025-04-08
-1. springboot()
+1. springboot(layout작성, )
 
 ---
 
 #### 2025-04-07
-1. springboot(jdk설정, jpa, controller, repository, view)
+1. springboot(jdk(외래키)설정, jpa, controller, repository, view)
 ---
 
 #### 2025-04-04
