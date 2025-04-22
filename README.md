@@ -51,16 +51,16 @@
 ---
 
 #### 2025-04-08
-1. springboot(layout작성, )
+1. springboot (layout작성, )
 
 ---
 
 #### 2025-04-07
-1. springboot(jdk(외래키)설정, jpa, controller, repository, view)
+1. springboot (jdk(외래키)설정, jpa, controller, repository, view)
 ---
 
 #### 2025-04-04
-1. spring(lombok, AOP, HikariCP)
+1. spring (lombok, AOP, HikariCP)
 ---
 
 #### 2025-04-03
