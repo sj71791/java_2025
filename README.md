@@ -1,5 +1,5 @@
 #### 2025-04-23
-1. 포트폴리오 팀작업 (드디어 member, review, book 조립!! 리뷰list 와 리뷰detail 페이지에 데이터 불러오기 성공ㅠㅠ)
+1. 포트폴리오 팀작업 (드디어 member, review, book 조립!!  리뷰 list 와 리뷰 detail 페이지에 데이터 불러오기 성공ㅠㅠ)
 2. springboot (공공데이터 날씨api 데이터 불러오기!)
 ---
 
