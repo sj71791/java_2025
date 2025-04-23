@@ -1,4 +1,4 @@
-package com.thejoa.boot008.utill_kakao;
+package com.thejoa.boot008.util_kakao;
 
 import java.util.List;
 
