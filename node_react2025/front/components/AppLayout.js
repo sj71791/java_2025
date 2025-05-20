@@ -30,7 +30,6 @@ const AppLayout = ({children}) => {
 
   //2. login상태
   const [isLogin, setIsLogin] = useState(false); 
-
   //////////////////////////////////////////// view
   return(
     <div>
@@ -39,7 +38,8 @@ const AppLayout = ({children}) => {
         <Col xs={24} md={4}> 
           {/*<h3 onClick={()=>{console.log('....')}}>{logo}</h3>*/}
           <h3 onClick={changeLogo}>{logo}</h3>
-          { isLogin? <UserProfile/> : <LoginForm/> }
+          { isLogin? <UserProfile setIsLogin={setIsLogin} /> : 
+                     <LoginForm setIsLogin={setIsLogin}/> }
         </Col>
         <Col xs={24} md={14} style={{backgroundColor:'#efefef'}}> {children} </Col>
         <Col xs={24} md={6}> <div> 

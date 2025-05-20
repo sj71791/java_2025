@@ -6,7 +6,7 @@ import Head from 'next/head';
 const TheJoa=({Component}) => {
   return (<>
     <Head>
-      <meta charset='utf-8'/>
+      <meta charSet='utf-8'/>
       <title>TheJoa</title>
     </Head>
     <Component/>

@@ -150,11 +150,42 @@ npm install --save @ant-design/icons@5
 2. 사용           [front] - [components] - AppLayout.js
 
 ☆ 훅 (Hook) : React의 상태를 관리, 컴포넌트 내부에서 값이 변할 수 있도록 해주는 역할
+
 ☆ 비구조화할당문법
 let arr = [1,2];   // 배열
 let a = arr[0];
 let b = arr[1];
 let [c,d] = arr;
+
+12. Component - signup.js / profile.js / [hooks] - userInput.js
+☆ 화살표함수
+()=>{}	return 필요
+()=>()	자동반환
+
+예)
+const user1 = ()=> { return{ name:'sally', age:3}; };
+const user2 = ()=> ( return{ name:'sally', age:3}; };
+//const user2 = ()=> ( return { name:'sally', age:3}; };
+※ Uncaught SyntaxError: Unexpected token 'return'
+
+console.log(user1());
+console.log(user2());
+
+const nums = [1,2,3,4];
+const test1 = nums.filter( ( num )=> { return num%2==0; } );	//2,4
+const test2 = nums.filter( ( num )=> ( num%2==0 ) );	//2,4
+
+13. 리렌더링
+- style={{}}
+- 객체와 객체를 비교하면 false
+
+let obj1 = {}
+let obj2 = {}
+obj1 === obj2
+- 결과물 : false
+
+- virtual dom 으로 검사하다가 새로바뀐부분이 있으면 계속 랜더링
+
 
 ______________________________________________________________
 ■3. redux
