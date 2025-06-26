@@ -19,7 +19,7 @@
 	<div class="panel"  >
 	  <div  class="panel-body">
 	  	<span class="glyphicon glyphicon-plus">  제목</span> 
-	     <p>${dto.member.btitle}</p>
+	     <p>${dto.btitle}</p>
 	  </div>	
 	</div>
 	<div class="panel"  >
@@ -32,18 +32,17 @@
 		<div class="">
 			<span><i class="bi bi-book-half"></i> 이미지</span>
 			<p>  
-				<img src="${dto.bfile}"  
-				     alt="${dto.btitle}" 
-				     style="width:200px"/>
+				<img src="${dto.bfile}" alt="${dto.btitle}" style="width:200px"/>
 			</p>
 		</div>
 	</div>	
 	<div class="text-end"    >
-		 <a href=""  
+		 <a href="${pageContext.request.contextPath}/board/update/${dto.id}"  
 		 	class="btn btn-danger" >수정</a> 
-		 <a href=""  
+		 <a href="${pageContext.request.contextPath}/board/delete/${dto.id}"  
 		 	class="btn btn-danger" >삭제</a>    
-		 <a href=""  class="btn btn-primary" >목록보기</a> 
+		 <a href="${pageContext.request.contextPath}/board/list"  
+		 	class="btn btn-primary" >목록보기</a> 
 	</div>						 
 </div>	
 <%@ include file="../inc/footer.jsp" %>
